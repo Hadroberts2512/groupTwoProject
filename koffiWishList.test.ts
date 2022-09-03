@@ -10,7 +10,7 @@ test('adding item to wishlist before signing in',async() => {
    await koffi.setInput(koffi.password,'HannahJJKoffi75')
    await koffi.click(koffi.signin)
 
-        await koffi.driver.sleep(5000) 
+        await koffi.driver.sleep(3000) 
         await koffi.driver.quit()
 
 

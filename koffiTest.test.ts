@@ -15,6 +15,9 @@ test('searching item and adding review', async() => {
     await koffi.click(koffi.submitBtn)
     let errroMessage = await koffi.getText(koffi.ratingError)
     expect(errroMessage).toContain('Please select one of each of the ratings above.')
+
+    await koffi.driver.sleep(3000) 
+    await koffi.driver.quit()
    
     
    
